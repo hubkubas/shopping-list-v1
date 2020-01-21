@@ -19,12 +19,12 @@ function addListAfterClick() {
 	}
 }
 
-function addListAfterKeypress(event) {
+function addListAfterClickPress(event) {
 	if (inputLength() > 0 && event.keyCode === 13) {
 		createListElement();
 	}
 }
 
-button.addEventListener("click", addListAfterClick);
+button.addEventListener("click", addListAfterClick) ;
 
-input.addEventListener("keypress", addListAfterKeypress);
+input.addEventListener("keypress", addListAfterClickPress);
