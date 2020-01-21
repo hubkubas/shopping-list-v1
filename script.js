@@ -2,6 +2,9 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
+
+
+
 function inputLength() {
 	return input.value.length;
 }
@@ -25,6 +28,14 @@ function addListAfterClickPress(event) {
 	}
 }
 
+function toggleClassDoneOnAndOff(event) {
+    if (event.target.tagName === "LI") {
+        event.target.classList.toggle("done");
+    }
+}
+
 button.addEventListener("click", addListAfterClick) ;
 
 input.addEventListener("keypress", addListAfterClickPress);
+
+ul.addEventListener("click", toggleClassDoneOnAndOff);
