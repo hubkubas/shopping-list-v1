@@ -21,3 +21,12 @@
 .done {
   text-decoration: line-through;
 }
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+}
