@@ -28,9 +28,9 @@ function addListAfterClick() {
 }
 
 
-	function btnDelete() {
-		// var list = document.querySelector(("ul");
-		// list.removeChild(list.childNodes[0]);
+	function btnDelete(evt) {
+		evt.target.removeEventListener("click", removeParent, false);
+		evt.target.parentNode.remove();
 	  }
 
 
