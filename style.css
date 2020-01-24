@@ -22,6 +22,10 @@
   text-decoration: line-through;
 }
 
+.blue {
+  color: blue;
+}
+
 button {
   background-color: #4CAF50; /* Green */
   border: none;

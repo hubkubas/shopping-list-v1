@@ -1,6 +1,7 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
+var btndelete = document.getElementById("buttondelete");
 
 
 function inputLength() {
@@ -17,9 +18,7 @@ function createListElement() {
 	btn.innerHTML = 'delete';
 }
 
-function createBtnElement() {
-	ul.appendChild(btn);
-}
+
 
 function addListAfterClick() {
 	if (inputLength() > 0) {
@@ -27,9 +26,12 @@ function addListAfterClick() {
 	}
 }
 
-function deleteAfterClick() {
-	// this.parentNode.remove();
-}
+
+	function btnDelete(element) {
+
+		
+	  }
+
 
 function addListAfterClickPress(event) {
 	if (inputLength() > 0 && event.keyCode === 13) {
@@ -45,7 +47,7 @@ function toggleClassDoneOnAndOff(event) {
 
 button.addEventListener("click", addListAfterClick);
 
-button.addEventListener("click", deleteAfterClick);
+btndelete.addEventListener("click", btnDelete);
 
 input.addEventListener("keypress", addListAfterClickPress);
 
