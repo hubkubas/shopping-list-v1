@@ -9,9 +9,16 @@ function inputLength() {
 
 function createListElement() {
 	var li = document.createElement("li");
+	var btn = document.createElement("button");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
+	li.appendChild(btn);
 	input.value = "";
+	btn.innerHTML = 'delete';
+}
+
+function createBtnElement() {
+	ul.appendChild(btn);
 }
 
 function addListAfterClick() {
@@ -21,8 +28,7 @@ function addListAfterClick() {
 }
 
 function deleteAfterClick() {
-	var ul = document.getElementById("myList");
-	list.removeChild(list.childNodes[0]);
+	// this.parentNode.remove();
 }
 
 function addListAfterClickPress(event) {
