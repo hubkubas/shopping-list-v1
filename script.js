@@ -15,8 +15,8 @@ function createListElement() {
 	ul.appendChild(li);
 	li.appendChild(btn);
 	input.value = "";
-	btn.innerHTML = 'delete';
-	btn.id = 'buttondelete';
+	btn.innerHTML = "delete";
+	btn.id = "buttondelete";
 }
 
 
@@ -29,8 +29,8 @@ function addListAfterClick() {
 
 
 	function btnDelete(event) {
-		if (event.target.id = document.getElementById("buttondelete")) {
-			ul.appendChild.remove(li);
+		if (event.target.id === "buttondelete" && event.target.tagName === "LI") {
+			event.target.classList.toggle("delete");
 		}
 	  }
 
