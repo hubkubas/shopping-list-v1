@@ -28,9 +28,9 @@ function addListAfterClick() {
 }
 
 
-	function btnDelete(evt) {
-		evt.target.removeEventListener("click", removeParent, false);
-		evt.target.parentNode.remove();
+	function btnDelete(event) {
+		event.target.removeEventListener("click", removeParent, false);
+		event.target.parentNode.remove();
 	  }
 
 
