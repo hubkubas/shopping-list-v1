@@ -28,10 +28,9 @@ function addListAfterClick() {
 }
 
 
-	function btnDelete(event) {
-		if (event.target.id === "buttondelete" && event.target.tagName === "LI") {
-			event.target.classList.toggle("delete");
-		}
+	function btnDelete() {
+		// var list = document.querySelector(("ul");
+		// list.removeChild(list.childNodes[0]);
 	  }
 
 
