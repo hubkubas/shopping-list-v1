@@ -28,13 +28,13 @@ function addListAfterClick() {
 }
 
 
-	function deleteItems(event) {
+function deleteItems(event) {
 	var target = event.target;
 	var btncheck = event.target.nodeName;
 	if (btncheck === "BUTTON") {
 		target.parentNode.remove()
 	}
-	  }
+}
 
 
 function addListAfterClickPress(event) {
@@ -44,14 +44,13 @@ function addListAfterClickPress(event) {
 }
 
 function toggleClassDoneOnAndOff(event) {
-    if (event.target.tagName === "LI") {
-        event.target.classList.toggle("done");
-    }
+	if (event.target.tagName === "LI") {
+		event.target.classList.toggle("done");
+	}
 }
 
 button.addEventListener("click", addListAfterClick);
 
-btndelete.addEventListener("click", btnDelete);
 
 input.addEventListener("keypress", addListAfterClickPress);
 
