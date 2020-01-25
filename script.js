@@ -28,9 +28,12 @@ function addListAfterClick() {
 }
 
 
-	function btnDelete(event) {
-		event.target.removeEventListener("click", removeParent, false);
-		event.target.parentNode.remove();
+	function deleteItems(event) {
+	var target = event.target;
+	var btncheck = event.target.nodeName;
+	if (btncheck === "BUTTON") {
+		target.parentNode.remove()
+	}
 	  }
 
 
@@ -53,3 +56,5 @@ btndelete.addEventListener("click", btnDelete);
 input.addEventListener("keypress", addListAfterClickPress);
 
 ul.addEventListener("click", toggleClassDoneOnAndOff);
+
+ul.addEventListener("click", deleteItems);
